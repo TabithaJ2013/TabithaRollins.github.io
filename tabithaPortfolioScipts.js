@@ -6,12 +6,18 @@ function atClick(id){
     if (c_id === null) {
         continue;
     } else {
-        if (headers[i] !== id){
-        c_id.hidden = true;
-        document.getElementsByName(headers[i])[0].classList.remove('active');
+        if ((headers[i] !== id) && (id !== 'projects')){
+            c_id.hidden = true;
+            document.getElementsByName(headers[i])[0].classList.remove('active');
+        } else if ((headers[i] !== id) && (id !== 'home')) {
+            c_id.style.display = 'none';
+            document.getElementsByName(headers[i])[0].classList.remove('active');
+        } else if ((headers[i] === id) && (id === 'home')) {
+            c_id.style.display = 'grid';
+            document.getElementsByName(headers[i])[0].classList.add('active');
         } else {
-        c_id.hidden = false;
-        document.getElementsByName(headers[i])[0].classList.add('active');
+            c_id.hidden = false;
+            document.getElementsByName(headers[i])[0].classList.add('active');
         }
     }
   }
