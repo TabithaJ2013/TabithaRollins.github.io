@@ -60,6 +60,12 @@ grid-template-columns: repeat(2, 1fr);
 gap: 10px;
 grid-auto-rows: minmax(100px, auto);
 }
+#projects {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    padding-left: 57px;
+    text-align: center;
+}
 .pacman_desc{
 grid-column: 1;
 grid-row: 2;
@@ -72,11 +78,21 @@ padding-left: 35px;
 }
 .eye_desc{
 grid-column: 1;
-grid-row: 4;
+grid-row: 3;
 padding-left:20px;
 }
 .eye_link{
-grid-colum: 1;
-grid-row: 5;
+grid-column: 2;
+grid-row: 3;
+padding-left: 35px;
+}
+.busTracker_desc{
+grid-column: 1;
+grid-row: 4;
+padding-left:20px;
+}
+.busTracker_link{
+grid-column: 2;
+grid-row: 4;
 padding-left: 35px;
 }
