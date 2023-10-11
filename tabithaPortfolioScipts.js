@@ -7,7 +7,7 @@ function atClick(id){
         continue;
     } else {
         if ((headers[i] !== id) && (id !== 'projects')){
-            c_id.hidden = true;
+            c_id.style.display = 'none'
             document.getElementsByName(headers[i])[0].classList.remove('active');
         } else if ((headers[i] !== id) && (id !== 'home')) {
             c_id.style.display = 'none';
@@ -16,7 +16,7 @@ function atClick(id){
             c_id.style.display = 'grid';
             document.getElementsByName(headers[i])[0].classList.add('active');
         } else {
-            c_id.hidden = false;
+            c_id.style.display = 'grid';
             document.getElementsByName(headers[i])[0].classList.add('active');
         }
     }
